@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Zomato</title>
+    <link rel="stylesheet" href="../style/food.css">
+    <link rel="stylesheet" href="../style/orders.css">
+    <link rel="stylesheet" href="../style/login&Signup.css">
+    <link rel="stylesheet" href="../style/cartModalButton.css">
+</head>
+<body>
+    <div id="foodNavbar"></div>
+
+    <div id="ordersContainer">
+        <h2>My Orders</h2>
+        <div id="ordersContent">
+            <div id="noOrders" style="display: none;">
+                <img src="https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=400" alt="No orders">
+                <h3>No orders yet!</h3>
+                <p>Start ordering your favorite food</p>
+                <a href="../pages/food.html" class="order-now-btn">Order Now</a>
+            </div>
+            <div id="ordersList"></div>
+        </div>
+    </div>
+
+    <section id="footer"></section>
+
+    <div id="UserSIgnUpLogInModal"></div>
+    <div id="alert"></div>
+
+    <div id="popUpCart">
+        <div id="cartDivIframe">
+            <i id="closeCartModal" class="fa-solid fa-xmark"></i>
+            <embed src="./cart.html" frameborder="0"></embed>
+        </div>
+    </div>
+    <div id="cartModalButton">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="badgeNumber">0</span>
+    </div>
+
+    <script src="../script/orders.js" type="module"></script>
+    <script src="../script/cartModalButton.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/a103610109.js" crossorigin="anonymous"></script>
+</body>
+</html>
